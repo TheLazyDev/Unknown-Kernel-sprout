@@ -52,12 +52,16 @@ config IOSCHED_ZEN
         Should work best with devices where there is no travel delay.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 80c33e2... block: VR: bring up!
 config IOSCHED_VR
 	tristate "V(R) I/O scheduler"
 	default y
 	---help---
 	Requests are chosen according to SSTF with a penalty of rev_penalty
 	for switching head direction.
+<<<<<<< HEAD
 config IOSCHED_FIFO
 	tristate "Fifo I/O scheduler"
 	default y
@@ -68,6 +72,9 @@ config IOSCHED_FIFO
 >>>>>>> b7a6b80... block: fifo: bring up!
 =======
 >>>>>>> eeb810f... block: zen: bring up!
+=======
+
+>>>>>>> 80c33e2... block: VR: bring up!
 config CFQ_GROUP_IOSCHED
 	bool "CFQ Group Scheduling support"
 	depends on IOSCHED_CFQ && BLK_CGROUP
@@ -156,6 +163,9 @@ choice
 
         config DEFAULT_ZEN
 		bool "ZEN" if IOSCHED_ZEN=y
+        
+        config DEFAULT_VR
+		bool "VR" if IOSCHED_VR=y
 
 >>>>>>> eeb810f... block: zen: bring up!
 endchoice
