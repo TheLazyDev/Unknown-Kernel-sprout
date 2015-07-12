@@ -51,6 +51,7 @@ config IOSCHED_ZEN
 	FCFS, dispatches are back-inserted, deadlines ensure fairness.
         Should work best with devices where there is no travel delay.
 
+<<<<<<< HEAD
 config IOSCHED_VR
 	tristate "V(R) I/O scheduler"
 	default y
@@ -65,6 +66,8 @@ config IOSCHED_FIFO
 	that does basic merging and sorting.
 
 >>>>>>> b7a6b80... block: fifo: bring up!
+=======
+>>>>>>> eeb810f... block: zen: bring up!
 config CFQ_GROUP_IOSCHED
 	bool "CFQ Group Scheduling support"
 	depends on IOSCHED_CFQ && BLK_CGROUP
@@ -126,6 +129,7 @@ choice
 		bool "No-op"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         config DEFAULT_SIO
 		bool "SIO" if IOSCHED_SIO=y
@@ -146,6 +150,14 @@ choice
 >>>>>>> 4aa3440... block: Add TRIPNDROID I/O Scheduler
 =======
 >>>>>>> b7a6b80... block: fifo: bring up!
+=======
+        config DEFAULT_SIO
+		bool "SIO" if IOSCHED_SIO=y
+
+        config DEFAULT_ZEN
+		bool "ZEN" if IOSCHED_ZEN=y
+
+>>>>>>> eeb810f... block: zen: bring up!
 endchoice
 
 config DEFAULT_IOSCHED
@@ -154,6 +166,7 @@ config DEFAULT_IOSCHED
 	default "cfq" if DEFAULT_CFQ
 	default "bfq" if DEFAULT_BFQ
 	default "noop" if DEFAULT_NOOP
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         default "sio" if DEFAULT_SIO
@@ -167,6 +180,10 @@ config DEFAULT_IOSCHED
 >>>>>>> 4aa3440... block: Add TRIPNDROID I/O Scheduler
 =======
 >>>>>>> b7a6b80... block: fifo: bring up!
+=======
+        default "sio" if DEFAULT_SIO
+        default "zen" if DEFAULT_ZEN
+>>>>>>> eeb810f... block: zen: bring up!
 
 endmenu
 
