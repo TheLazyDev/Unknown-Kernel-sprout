@@ -543,8 +543,6 @@ config UID_CPUTIME
 	help
 	  Per UID based cpu time statistics exported to /proc/uid_cputime
 
-<<<<<<< HEAD
-=======
 config THUNDERQUAKE_ENGINE_GPL
    tristate "Vibrator Intensity Controller for MTK Vibrator"
    default y
@@ -558,8 +556,7 @@ config POCKETMOD
 		Say Y here to enable PocketMod. Users can always
 		toggle this on/off from sysfs later (should they
 		want it)
-
->>>>>>> 3544e9d... bring up pocket_mod for sprout!
+		
 source "drivers/misc/c2port/Kconfig"
 source "drivers/misc/eeprom/Kconfig"
 source "drivers/misc/cb710/Kconfig"
