@@ -35,13 +35,8 @@
  */
 
 /* Tuning Interface */
-<<<<<<< HEAD
 #ifdef ARCH_MT6582
 #define FREQ_RESPONSIVENESS		1300000
-=======
-#ifdef CONFIG_MACH_LGE
-#define FREQ_RESPONSIVENESS		2265600
->>>>>>> 2ad13af... cpufreq: alucard: bring up!
 #else
 #define FREQ_RESPONSIVENESS		1134000
 #endif
