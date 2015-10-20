@@ -498,9 +498,13 @@ CONFIG_CPU_FREQ_GOV_HOTPLUG=n
 CONFIG_CPU_FREQ_GOV_INTERACTIVE=y
 # CONFIG_CPU_FREQ_GOV_CONSERVATIVE is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_CPU_FREQ_GOV_ADAPTIVE is not set
 =======
 >>>>>>> parent of 918db9c... Just trying to add new governor thanks to vikrant arya for telling me :)
+=======
+CONFIG_CPU_FREQ_GOV_ADAPTIVE=y
+>>>>>>> parent of 00da9a0... Experiments ;_;
 
 #
 # ARM CPU frequency scaling drivers

@@ -16,7 +16,6 @@
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#define CPUFREQ_DEFAULT_GOVERNOR  cpufreq_gov_adaptive
 
 #include <asm/cputime.h>
 #include <linux/kernel.h>
