@@ -1604,10 +1604,6 @@ static inline int check_collision(struct rmap_item *rmap_item,
 static struct page *page_trans_compound_anon(struct page *page)
 {
 	if (PageTransCompound(page)) {
-<<<<<<< HEAD
-		struct page *head = compound_trans_head(page);
-=======
->>>>>>> 27000c5... Fix UKSM
 		struct page *head = compound_head(page);
 		/*
 		 * head may actually be splitted and freed from under
