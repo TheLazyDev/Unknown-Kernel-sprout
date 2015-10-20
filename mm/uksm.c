@@ -1604,11 +1604,8 @@ static inline int check_collision(struct rmap_item *rmap_item,
 static struct page *page_trans_compound_anon(struct page *page)
 {
 	if (PageTransCompound(page)) {
-<<<<<<< HEAD
 		struct page *head = compound_trans_head(page);
-=======
 		struct page *head = compound_head(page);
->>>>>>> b85cd81... add uksm 0.1.2.3 for v3.10 .ge.46.patch
 		/*
 		 * head may actually be splitted and freed from under
 		 * us but it's ok here.

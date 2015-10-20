@@ -406,8 +406,6 @@ extern struct cpufreq_governor cpufreq_gov_interactive;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTERACTIVEPLUS)
 extern struct cpufreq_governor cpufreq_gov_interactiveplus;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_interactiveplus)
-<<<<<<< HEAD
-=======
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND)
 extern struct cpufreq_governor cpufreq_gov_intellidemand;
 #define CPUFREQ_DEFAULT_GOVERNOR        (&cpufreq_gov_intellidemand)
@@ -423,9 +421,6 @@ extern struct cpufreq_governor cpufreq_gov_wheatley;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_ALUCARD)
 extern struct cpufreq_governor cpufreq_gov_alucard;
 #define CPUFREQ_DEFAULT_GOVERNOR  (&cpufreq_gov_alucard)
-<<<<<<< HEAD
->>>>>>> 2ad13af... cpufreq: alucard: bring up!
-=======
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_YANKZACTIVE)
 extern struct cpufreq_governor cpufreq_gov_yankzactive;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_yankzactive)
@@ -438,7 +433,6 @@ extern struct cpufreq_governor cpufreq_gov_impulse;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_DARKNESS)
 extern struct cpufreq_governor cpufreq_gov_darkness;
 #define CPUFREQ_DEFAULT_GOVERNOR        (&cpufreq_gov_darkness)
->>>>>>> 307c28a... cpufreq: darkness: Bring Up!
 #endif
 
 

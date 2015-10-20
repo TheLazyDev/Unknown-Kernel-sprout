@@ -175,8 +175,6 @@ config CPU_FREQ_DEFAULT_GOV_ALUCARD
 	select CPU_FREQ_GOV_ALUCARD
 	help
 
-<<<<<<< HEAD
-=======
 config CPU_FREQ_DEFAULT_GOV_YANKACTIVE
 	bool "yankactive"
 	select CPU_FREQ_GOV_YANKACTIVE
@@ -205,7 +203,6 @@ config CPU_FREQ_DEFAULT_GOV_DARKNESS
 	bool "darkness"
 	select CPU_FREQ_GOV_DARKNESS
 
->>>>>>> 307c28a... cpufreq: darkness: Bring Up!
 endchoice
 
 config CPU_FREQ_GOV_PERFORMANCE
@@ -422,8 +419,6 @@ config CPU_FREQ_GOV_ALUCARD
 
           If in doubt, say N.
 
-<<<<<<< HEAD
-=======
 config CPU_FREQ_GOV_YANKACTIVE
 	tristate "'yankactive' cpufreq policy governor"
 	help
@@ -463,7 +458,6 @@ config CPU_FREQ_GOV_IMPULSE
 config CPU_FREQ_GOV_DARKNESS
 	tristate "'darkness' cpufreq policy governor"
 
->>>>>>> 307c28a... cpufreq: darkness: Bring Up!
 config GENERIC_CPUFREQ_CPU0
 	tristate "Generic CPU0 cpufreq driver"
 	depends on HAVE_CLK && REGULATOR && PM_OPP && OF
