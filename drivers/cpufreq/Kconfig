@@ -53,16 +53,6 @@ choice
 	  This option sets which CPUFreq governor shall be loaded at
 	  startup. If in doubt, select 'performance'.
 
-config CPU_FREQ_DEFAULT_GOV_ADAPTIVE
-	bool "adaptive"
-	select CPU_FREQ_GOV_ADAPTIVE
-	---help---
-	  Use the CPUFreq governor 'adaptive' as default. This allows
-	  you to get a full dynamic cpu frequency capable system by simply
-	  loading your cpufreq low-level hardware driver, using the
-	  'adaptive' governor for latency-sensitive workloads and demanding
-	  performance.
-	  
 config CPU_FREQ_DEFAULT_GOV_PERFORMANCE
 	bool "performance"
 	select CPU_FREQ_GOV_PERFORMANCE
@@ -145,8 +135,11 @@ config CPU_FREQ_DEFAULT_GOV_HOTPLUG
 	  Be aware that not all cpufreq drivers support the hotplug
 	  governor. If unsure have a look at the help section of the
 	  driver. Fallback governor will be the performance governor.
+<<<<<<< HEAD
 	  
 
+=======
+>>>>>>> parent of 918db9c... Just trying to add new governor thanks to vikrant arya for telling me :)
 
 config CPU_FREQ_DEFAULT_GOV_PEGASUSQ
         bool "pegasusq"
