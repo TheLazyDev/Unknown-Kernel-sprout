@@ -135,33 +135,7 @@ config CPU_FREQ_DEFAULT_GOV_HOTPLUG
 	  Be aware that not all cpufreq drivers support the hotplug
 	  governor. If unsure have a look at the help section of the
 	  driver. Fallback governor will be the performance governor.
-<<<<<<< HEAD
-	  
-config CPU_FREQ_GOV_ADAPTIVE
-	tristate "'adaptive' cpufreq policy governor"
-	---help---
-	  'adaptive' - This driver adds a dynamic cpufreq policy governor
-	  designed for latency-sensitive workloads and also for demanding
-	  performance.
 
-	  This governor attempts to reduce the latency of clock
-	  increases so that the system is more responsive to
-	  interactive workloads in loweset steady-state but to
-	  to reduce power consumption in middle operation level level up
-	  will be done in step by step to prohibit system from going to
-	  max operation level.
-
-<<<<<<< HEAD
-=======
->>>>>>> parent of 918db9c... Just trying to add new governor thanks to vikrant arya for telling me :)
-=======
-	  To compile this driver as a module, choose M here: the
-	  module will be called cpufreq_adaptive.
-
-	  For details, take a look at linux/Documentation/cpu-freq.
-
-	  If in doubt, say N.
->>>>>>> parent of 00da9a0... Experiments ;_;
 
 config CPU_FREQ_DEFAULT_GOV_PEGASUSQ
         bool "pegasusq"
