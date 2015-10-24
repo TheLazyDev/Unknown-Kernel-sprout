@@ -730,8 +730,8 @@ static int cpufreq_governor_dbs(struct cpufreq_policy *policy,
 		mutex_init(&this_dbs_info->timer_mutex);
 		dbs_timer_init(this_dbs_info);
 
-		pm_idle_old = default_idle;
-		default_idle = cpufreq_adaptive_idle;
+		pm_idle_old = pm_idle;
+		pm_idle = cpufreq_adaptive_idle;
 		break;
 
 	case CPUFREQ_GOV_STOP:
@@ -746,7 +746,7 @@ static int cpufreq_governor_dbs(struct cpufreq_policy *policy,
 			sysfs_remove_group(cpufreq_global_kobject,
 					   &dbs_attr_group);
 
-		default_idle = pm_idle_old;
+		pm_idle = pm_idle_old;
 		break;
 
 	case CPUFREQ_GOV_LIMITS:
