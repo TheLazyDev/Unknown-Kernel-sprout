@@ -374,7 +374,7 @@ KBUILD_CPPFLAGS := -D__KERNEL__
 KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -fno-strict-aliasing -fno-common \
 		   -Wno-format-security \
-                   -Werror-implicit-function-declaration \
+            -Wno-implicit-function-declaration \
 		   -fno-delete-null-pointer-checks \
 		   -Werror=format -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast
 
